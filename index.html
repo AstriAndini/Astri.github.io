@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Astri CV</title>
+<!--
+Template 2110 Character
+http://www.tooplate.com/view/2110-character
+-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+</head>
+
+<body class="tm-bg-dark">
+    <main class="tm-container masonry">
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <p class="tm-hero-text">&ldquo;Hallo, My name is Astri Andini usually called Aci, I am an LPKIA student with a major in Multimedia
+                
+                The reason I entered the multimedia department is because I want to know more about art in the editing world by learning many things between art and computers. I happen to like learning that</a>&rdquo;</p>
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <i class="fas fa-braille fa-3x"></i>
+                    <h1 class="tm-brand-name">About Me</h1>
+                </div>
+            </header>
+        </div>
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="img/image-01.jpg" alt="Image" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
+            data-mobile-seq-no="5">
+            <i class="fas fa-award fa-4x tm-block-icon"></i>
+            <p>HTML</p>
+            <div class="container">
+            <div class="skills html">75%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+            <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+            <div class="skills js">70%</div>
+            </div>
+
+            <p>PHP</p>
+            <div class="container">
+            <div class="skills php">65%</div>
+            </div>
+            
+        </div>
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="img/image-04.jpg" alt="Image" class="tm-img-left">
+        </div>
+        
+        
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="img/yang aci.JPG" alt="Image">
+        </div>
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                        Education and Organization
+                    </h2>
+                </header>
+                <p>Multimedia 2020 - 2023 LPKIA Digital Economy Institute, MA Kudang 2017 - 2020 Qiroarussaba'ah.</p>
+                <p class="tm-mt tm-mb-small">Move 2021 - now LPKIA IDE, information 2021 - now creating - LPKIA IDE.
+                </p>
+                <!-- -->
+            </div>
+        </div>
+
+        <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+            <img src="img/yang aci2.PNG" alt="Image">
+        </div>
+
+        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+            <div class="tm-form-container tm-block-pad tm-pb-0">
+                <header>
+                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
+                        Sertificate
+                    </h2>
+                    <img src="img/sertifikat.jpg" alt="Image">
+            </div>
+
+            <div class="tm-form-section-tag">
+                <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
+                    <header>
+                        <h2>Contact Me</h2>
+                    </header>
+                     <p>40395 Cikopo Cicalengka No.35,Tenjolaya Cicalengka</p>
+                    <p>Jalan H.Darham Cicalengka</p> 
+                    <p>Bandung</p>
+                    <div class="tm-section-text-container-6">
+                        <span class="tm-social-icon-container-inner">
+                         <a href="https://www.facebook.com/asri.andini.165"><i class="fab fa-facebook-f"></i></a>
+                        </span>
+                      </a>              
+                        <span class="tm-social-icon-container-inner">
+                          <a href="https://instagram.com/asriandiniii?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                        </span>
+                      </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script>
+
+        let callAdjustLayout;
+        let currentLayout = "desktop",
+            nextLayout = "desktop";
+
+        /**
+         * detect IE
+         * returns version of IE or false, if browser is not Internet Explorer
+         */
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                // IE 10 or older => return version number
+                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+            }
+
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                // IE 11 => return version number
+                var rv = ua.indexOf('rv:');
+                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+            }
+
+            var edge = ua.indexOf('Edge/');
+            if (edge > 0) {
+                // Edge (IE 12+) => return version number
+                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            }
+
+            // other browser
+            return false;
+        }
+
+        // Adjust layout based on the browser width
+        function adjustLayout() {
+            let block1, block2, block3, block4, block5, block6, block7, block8, block9;
+
+            if (window.innerWidth <= 1199) {
+                // Mobile layout
+                nextLayout = "mobile";
+                block1 = $("div[data-mobile-seq-no='1']");
+                block2 = $("div[data-mobile-seq-no='2']");
+                block3 = $("div[data-mobile-seq-no='3']");
+                block4 = $("div[data-mobile-seq-no='4']");
+                block5 = $("div[data-mobile-seq-no='5']");
+                block6 = $("div[data-mobile-seq-no='6']");
+                block7 = $("div[data-mobile-seq-no='7']");
+                block8 = $("div[data-mobile-seq-no='8']");
+                block9 = $("div[data-mobile-seq-no='9']");
+            } else {
+                // Desktop layout
+                nextLayout = "desktop";
+                block1 = $("div[data-desktop-seq-no='1']");
+                block2 = $("div[data-desktop-seq-no='2']");
+                block3 = $("div[data-desktop-seq-no='3']");
+                block4 = $("div[data-desktop-seq-no='4']");
+                block5 = $("div[data-desktop-seq-no='5']");
+                block6 = $("div[data-desktop-seq-no='6']");
+                block7 = $("div[data-desktop-seq-no='7']");
+                block8 = $("div[data-desktop-seq-no='8']");
+                block9 = $("div[data-desktop-seq-no='9']");
+            }
+
+            if (nextLayout !== currentLayout) {
+                // Reorder blocks based on their seq no
+                block1.after(block2.detach());
+                block2.after(block3.detach());
+                block3.after(block4.detach());
+                block4.after(block5.detach());
+                block5.after(block6.detach());
+                block6.after(block7.detach());
+                block7.after(block8.detach());
+                block8.after(block9.detach());
+                currentLayout = nextLayout;
+            }
+        }
+
+        // Adjust layout upon window resize
+        window.onresize = function () {
+            clearTimeout(callAdjustLayout);
+            callAdjustLayout = setTimeout(adjustLayout, 100);
+        }
+
+        // DOM is ready
+        $(function () {
+            if (detectIE()) {
+                alert('Please use the latest version of Chrome or Firefox for best browsing experience.');
+            }
+
+            adjustLayout();
+        })
+    </script>
+</body>
+
+</html>
